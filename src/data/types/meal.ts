@@ -6,10 +6,7 @@ export interface Meal {
   calories: number;
   protein: string;
   carbs: string;
-  fats: string;
   conditions: string[];
-  ingredients: string[];
-  benefits: string[];
   whyItWorks: string;
   recipe: {
     prepTime: string;
