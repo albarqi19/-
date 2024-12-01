@@ -35,18 +35,19 @@ export function MealCard({
           alt={title}
           className="w-full h-48 object-cover"
         />
-        <div className="absolute top-4 right-4 left-4 flex flex-wrap gap-2 justify-end">
+      </div>
+      <div className="p-4">
+        <div className="flex flex-wrap gap-2 mb-3">
           {conditions.map((condition, index) => (
             <span
               key={index}
-              className="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg whitespace-nowrap"
+              className="bg-emerald-600 text-white px-2 py-0.5 rounded-full text-sm font-medium"
             >
               {condition}
             </span>
           ))}
         </div>
-      </div>
-      <div className="p-4">
+
         <h3 className="text-xl font-semibold text-gray-900">{title}</h3>
         <p className="text-gray-600 mt-1 line-clamp-2">{description}</p>
         
