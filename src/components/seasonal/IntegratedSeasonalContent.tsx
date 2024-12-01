@@ -51,12 +51,12 @@ export function IntegratedSeasonalContent() {
           الحالات الصحية والوجبات المناسبة
         </h2>
 
-        <div className="flex justify-center space-x-4 rtl:space-x-reverse mb-8">
+        <div className="flex flex-wrap justify-center gap-2 px-4 mb-8">
           {healthCategories.map((category) => (
             <button
               key={category.id}
               onClick={() => setActiveCategory(category.id)}
-              className={`px-4 py-2 rounded-lg transition-colors ${
+              className={`px-3 py-2 rounded-lg text-sm transition-colors whitespace-nowrap ${
                 activeCategory === category.id
                   ? 'bg-emerald-600 text-white'
                   : 'bg-white text-gray-600 hover:bg-emerald-50'
