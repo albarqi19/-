@@ -42,20 +42,21 @@ export function MealsPage() {
           <p className="mt-4 text-xl text-gray-600">اختر الوجبة المناسبة لحالتك الصحية</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {allMeals.map((meal) => (
-            <MealCard
-              key={meal.id}
-              title={meal.title}
-              description={meal.description}
-              image={meal.image}
-              calories={meal.calories}
-              protein={meal.protein}
-              carbs={meal.carbs}
-              conditions={meal.conditions.map(translateCondition)}
-              healthBenefits={meal.benefits}
-              onClick={() => setSelectedMeal(meal)}
-            />
+            <div key={meal.id} className="flex flex-col h-full">
+              <MealCard
+                title={meal.title}
+                description={meal.description}
+                image={meal.image}
+                calories={meal.calories}
+                protein={meal.protein}
+                carbs={meal.carbs}
+                conditions={meal.conditions.map(translateCondition)}
+                healthBenefits={meal.benefits}
+                onClick={() => setSelectedMeal(meal)}
+              />
+            </div>
           ))}
         </div>
 
