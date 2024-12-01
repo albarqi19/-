@@ -5,6 +5,7 @@ import { Hero } from './components/home/Hero';
 import { FeaturedMeals } from './components/home/FeaturedMeals';
 import { IntegratedSeasonalContent } from './components/seasonal/IntegratedSeasonalContent';
 import { MealsPage } from './pages/MealsPage';
+import { AboutPage } from './pages/AboutPage';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             </main>
           } />
           <Route path="/meals" element={<MealsPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </div>
     </Router>

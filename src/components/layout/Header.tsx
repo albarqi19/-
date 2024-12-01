@@ -17,11 +17,25 @@ export function Header() {
             </Link>
           </div>
 
-          <nav className="hidden md:flex space-x-8 rtl:space-x-reverse">
-            <Link to="/" className="text-gray-700 hover:text-emerald-600">الرئيسية</Link>
-            <Link to="/about" className="text-gray-700 hover:text-emerald-600">من نحن</Link>
-            <Link to="/meals" className="text-gray-700 hover:text-emerald-600">الوجبات</Link>
-            <Link to="/contact" className="text-gray-700 hover:text-emerald-600">تواصل معنا</Link>
+          <nav className="flex items-center gap-6">
+            <Link 
+              to="/" 
+              className="text-gray-600 hover:text-emerald-600 transition-colors"
+            >
+              الرئيسية
+            </Link>
+            <Link 
+              to="/meals" 
+              className="text-gray-600 hover:text-emerald-600 transition-colors"
+            >
+              الوجبات
+            </Link>
+            <Link 
+              to="/about" 
+              className="text-gray-600 hover:text-emerald-600 transition-colors"
+            >
+              من نحن
+            </Link>
           </nav>
         </div>
       </div>
